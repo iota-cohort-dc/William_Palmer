@@ -1,0 +1,13 @@
+pwd
+ls
+cd ..
+cd DojoAssignments
+git init
+git remote add origin https://github.com/WilliamJPalmer/DojoAssignments.git
+git push -u origin master
+git add .
+git commit - "New files and folders for DojoAssignments on GitHub"
+touch readme.txt
+vi readme.txt
+git status
+git commit -m "put info into the readme.txt"
