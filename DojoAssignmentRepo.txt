@@ -11,3 +11,4 @@ touch readme.txt
 vi readme.txt
 git status
 git commit -m "put info into the readme.txt"
+git push
