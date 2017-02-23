@@ -1,0 +1,81 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+ width: 970px;
+ background-color: #00264d;
+ margin: 5px;
+ padding: 5px;
+}
+h2{
+  color:#e6e6e6;
+  padding:20px;
+}
+#header{
+ height: 75px;
+ background-color: #cc0000;
+ margin: 5px;
+ border-radius: 15px;
+}
+#navigation{
+ height: 300px;
+ width: 175px;
+ background-color: #009999;
+ display: inline-block;
+ margin-top : 10px;
+ margin-left: 5px;
+ padding: 10px;
+ border-radius: 15px;
+ vertical-align:top;
+}
+li{
+  margin-left: 10px;
+  font-size: 8pt;
+  color: #66ffff;
+}
+a{
+  color: #66ffff;
+}
+p{
+  color: white;
+}
+
+#navTextlinks{
+  list-style-position: inside;
+}
+#main_content_text{
+  font-size: 12px;
+  color: white;
+}
+#navHead{
+  font-size: 14px;
+  color: #66ffff;
+}
+#mainContentH3{
+  /*font-size: 14px;*/
+  color: white;
+}
+#main_content{
+ height: 400px;
+ width: 730px;
+ background-color: #111111;
+ display: inline-block;
+ vertical-align: top;
+ margin: 10px;
+ padding: 7px;
+ border-radius: 15px;
+}
+h6{
+  color: #e6e6e6;
+  padding: 15px;
+}
+#footer{
+ height: 45px;
+ /*width: 660px;*/
+ background-color: grey;
+ margin: 10px;
+ border-radius: 15px;
+ /*text-decoration-color: white;*/
+}

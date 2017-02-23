@@ -1,0 +1,108 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+ width: 800px;
+ /*background-color: silver;*/
+ margin: 0px;
+ padding: 0px;
+ background: linear-gradient(to left, #948E99 , #2E1437); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#header{
+  background: #f6f6f6;
+  height: 50px;
+  display: inline-flex;;
+}
+.subAbout{
+  width: 350px;
+  /*border: 5px;*/
+  margin: 15px;
+  padding: 4px;
+  display: inline-block;
+  background-color: rgb(255,255,255);
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.mePhoto{
+  width: 350px;
+  border:3px;
+}
+h1{
+  display: inline-block;
+  font-family: 'Architects Daughter', cursive;
+}
+h2{
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: right;
+  margin-left: 100px;
+  display: inline-block;;
+}
+h3{
+  background: linear-gradient(to bottom, #8e9e8e , #c9c9c9);
+  font-family: sans-serif;
+  font-size: 14px;
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.icon{
+  width: 30px;
+  padding:5px;
+}
+.icon2{
+  width: 20px;
+  /*padding: 3px;*/
+}
+.portpics{
+  width: 235px;
+  vertical-align: top;
+}
+.subportup{
+  width: 235px;
+  height: 300px;
+  display: inline-block;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: black;
+  margin-right:15px;
+  vertical-align: top;
+}
+.subportdwn{
+  width: 235px;
+  height: 150px;
+  display: inline-block;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: black;
+  margin-left: 15px;
+  vertical-align: top;
+  margin-bottom: 15px;
+}
+
+.button{
+  margin-left: 30%;
+  height: 20px;
+}
+#portfolioUp{
+ display: inline-block;
+ margin-left: 15px;
+}
+#porfolioDwn{
+ display: inline-block;
+ margin-left: 5%;
+}
+#about{
+  display: inline-flex;
+}
+#footer{
+  background: #f6f6f6;
+  height: 50px;
+  font-family: sans-serif;font-size: 10pt;
+  text-align: center;
+  text-decoration: underline;
+}
