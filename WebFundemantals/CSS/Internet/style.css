@@ -1,0 +1,222 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  /*outline: 1px dashed red;*/
+  /*/rgb #21669A; net blue*/
+  /*/rgb #5083A8 lightblue for gradient*/
+  /*/#0096AA main span text-align: */
+  /*/#21669A main large text*/
+  /*#00D0ED Phone number color*/
+/*#0087DA bottom box border*/
+}
+.wrapper {
+  width: 1000px;
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+  margin: 0px auto;
+}
+.header img{
+  width: 75px;
+  margin-bottom: -20px;
+}
+.header{
+  display: block;
+}
+.header h2{
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-stretch: extra-condensed;
+  color:  #666666;
+  display: inline-block;
+}
+.header span{
+  font-size: 28px; font-family: sans-serif; font-weight: 400; font-stretch: extra-condensed;
+  color:  #21669A;
+}
+.header p{
+  font-size: 24px; font-family: sans-serif; font-weight: 400; font-stretch: extra-condensed;
+  color: white;
+  padding: 10px;
+  background: linear-gradient(to bottom, #21669A , #5083A8, #21669A);
+  display: block;
+}
+.body {
+  padding-top: 15px;
+  background: linear-gradient(to bottom, #E3E3E3 , white 10%, white);
+}
+#bluBtn{
+  border: none;
+	border-radius: 5px;
+	color: white;
+	width: 90%;
+	height: 25px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+  background: linear-gradient(to bottom, #5083A8, #21669A);
+}
+#orngBtn{
+	border: none;
+	border-radius: 5px;
+	color: white;
+	width: 90%;
+	height: 25px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+  background: linear-gradient(to bottom, #EAAB62, #F17111);
+}
+#adBtn{
+  border: none;
+	border-radius: 5px;
+	color: white;
+	width: 90%;
+	height: 25px;
+	margin-left: 7px;
+	margin-bottom: 5px;
+  background: linear-gradient(to bottom, #75D1DE, #03B4CD);
+}
+#ninja{
+  width: 60%;
+  margin-left: 30px;
+	margin-bottom: 20px;
+}
+.ad h3{
+  color: white;
+  font-size: 18px;font-family: sans-serif;font-weight: 200;
+	text-align: center;
+	padding-top: 10px;
+  margin-top: 10px;
+}
+.left{
+  width: 150px; font-family: sans-serif; font-size: 10px; font-weight: bold;
+  padding-left: 5px;
+  display: inline-block;
+}
+.left h5 span{
+  color:red;
+}
+.left h5{
+  font-size: 12px;
+  margin-bottom:10px;
+}
+.left span{
+  color: #21669A;
+}
+.left p{
+  margin-bottom: 10px;
+}
+.left hr{
+  margin-top: 20px;
+}
+.ad{
+  background-image: url("images/ad_background.png");
+  width: 150px;
+  height: 275px;
+  margin-top: 30px;
+}
+.main{
+  display: inline-block;
+  vertical-align: top;
+  width: 750px;
+  margin-left: 30px;
+
+}
+#home{
+	width: 15px;
+	vertical-align: top;
+  margin-left: 50px;
+}
+#dns {
+	display: inline-block;
+	vertical-align: top;
+  font-size: 14px; font-family: sans-serif; font-weight: 400;
+	width: 60px;
+	padding-top: 1px;
+	color: #3779e5;
+}
+#phone {
+	width: 30px;
+	margin-left: 320px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.info {
+  font-size: 8px; font-family: sans-serif; font-weight: 400;
+	width: 200px;
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+	/*margin-bottom: 10px;*/
+	margin-left: 10px;
+}
+
+#phonenum {
+  font-size: 21px; font-family: sans-serif; font-weight: bolder;;
+	color: #00D0ED;
+}
+
+.phonetxt {
+  font-size: 10px; font-family: sans-serif; font-weight: 400;
+	margin-left: 0px;
+}
+.mainInfo{
+  font-size: 12px; font-family: sans-serif; font-weight: 300;
+  padding: 10px 90px 10px 60px;
+}
+.mainInfo ul{
+  padding-left: 25px;
+}
+.mainInfo hr{
+  margin-bottom: 5px;
+}
+.mainInfo ol{
+  padding-left: 25px;
+}
+.text span{
+  color: #00D0ED;
+  font-weight: bold;
+}
+.titles{
+  color:#21669A;
+  font-size: 12px;
+  font-family: sans-serif;font-weight: bold;
+}
+#cliserv{
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+.link {
+  color: #00D0ED;
+  font-weight: bold;
+}
+.bottom img{
+  width: 80px;
+  display: inline-block;
+  margin: 5px;
+}
+.bottom{
+  width: 560px;
+  margin-left: 60px;
+  padding: 10px 10px 10px 20px;
+  border-style: solid;border-width: 5px; border-color: #0087DA;
+  display: inline-flex;
+  font-size: 12px; font-family: sans-serif; font-weight: 300;
+}
+.bottom3{
+  display: inline-block;
+  margin-left: 5px;
+}
+.bottom3 p{
+  margin-bottom: 5px;
+  margin-left: 20px;
+  /*display: inline-block;*/
+}
+.bottom3 h4 {
+  margin-bottom: 5px;
+  margin-left:20px;
+  /*display: inline-block;*/
+}
