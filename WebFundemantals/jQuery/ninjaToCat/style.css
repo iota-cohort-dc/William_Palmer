@@ -1,0 +1,24 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  background: #333333;
+}
+.wrapper {
+  padding:10px;
+  margin: 0px auto;
+  background: #333333;
+  width: 300px;
+
+}
+.main {
+  display: inline-block;
+  /*align-items: center;*/
+  background: #333333;margin-top: 15px;
+}
+h2 {
+  font-size: 24px; font-family: sans-serif;color: white;
+}
+.header{
+  display: inline-block;
+
+}

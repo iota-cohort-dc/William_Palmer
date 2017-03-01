@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>disappearing Ninja</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // alert("rats");
+          $("img").click(function(){
+            $(this).hide("slow");
+          })
+          $("button").click(function(){
+            $("img").show("slow");
+          })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+          <h2>The Disappearing Ninja!!!</h2>
+        </div>
+        <div class="main">
+          <img src="images/ninja.jpg" alt="ninja">
+          <img src="images/ninja.jpg" alt="ninja">
+          <img src="images/ninja.jpg" alt="ninja">
+          <img src="images/ninja.jpg" alt="ninja">
+          <img src="images/ninja.jpg" alt="ninja">
+          <img src="images/ninja.jpg" alt="ninja">
+          <img src="images/ninja.jpg" alt="ninja">
+          <img src="images/ninja.jpg" alt="ninja">
+        </div>
+        <div class="footer">
+            <button type="button" name="button">Restore</button>
+        </div>
+    </div>
+</body>
+
+</html>

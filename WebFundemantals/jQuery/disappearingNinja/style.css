@@ -1,0 +1,39 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  /*outline: 1px solid red;*/
+}
+.wrapper {
+  margin: 0px auto;
+  background-color: black;
+  /*display: inline-block;*/
+  width:900px;
+  padding: 20px;
+}
+.header {
+  padding: 5px;
+  margin: 10px;
+  background: black;
+  display: inline-block;
+  text-align: center;
+}
+
+.main{
+  padding: 5px;
+  margin: 10px;
+  background: black;
+  display: inline-block;
+}
+img {
+  display: inline-block;
+  width: 200px;
+  margin: 5px;
+}
+h2 {
+  color: white;
+}
+button {
+  color: red;
+  height: 20px;
+  width: 80px;
+}

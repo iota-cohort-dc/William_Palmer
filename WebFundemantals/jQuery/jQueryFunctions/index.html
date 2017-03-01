@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        alert("rats");
+
+        $('#btn1').click(function() {
+            alert("You have just clicked on a button to pop up an alert. Good Job!");
+        });
+        $("#btn2").click(function() {
+            $('.hide p').hide("slow");
+        });
+        $("#btn3").click(function() {
+            $('.hide p').show("slow");
+        })
+        $("#btn4").click(function() {
+            $(".toggle p").toggle()
+        })
+        $("#btn5").click(function() {
+                if ($("#slideD").is(":hidden")) {
+                    $("#slideD").slideDown("slow");
+                } else {
+                    $("#slide").hide();
+                }
+        })
+        $("#btn6").click(function() {
+                if ($("#slideD").is(":hidden")) {
+                    $("#slideD").show("slow");
+                } else {
+                    $("#slideD").slideUp();
+                }
+        })
+        $("#btn13").click(function(){
+          $(".append p").append("You will see more text.")
+        });
+        $("#btn10").click(function(){
+          $(".addClass p").addClass("clicked");
+        })
+        $("#btn14").click(function(){
+          $(".html p").html("<span> Putting stuff in your way!!!!</span>")
+        })
+        $("#btn16").click(function(){
+
+        })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>jQuery Functions in Action!</h2>
+        <div class="click">
+            <h3>".click"</h3>
+            <p>Click on the button below to show the .click function for jQuery in action. Click "Close" on the resulting pop-up window to continue.</p>
+            <button id="btn1" type="button" name="button">Click here!</button>
+
+        </div>
+        <div class="hide">
+            <h3>".hide"</h3>
+            <p>Click on the button below to hide the text that is displayed in this box.</p>
+            <button id="btn2" type="button" name="button">Click here!</button>
+        </div>
+        <div class="show">
+            <h3>".show"</h3>
+            <p>Click on the button below to make the text in the above box come back.</p>
+            <button id="btn3" type="button" name="button">Click here!</button>
+        </div>
+        <div class="toggle">
+            <h3>".toggle"</h3>
+            <p>Click on the button below to change this text to something different.</p>
+            <p style="display: none">Now you can click on the button again and restore the original state of the text</p>
+            <button id="btn4" type="button" name="button">Click here!</button>
+        </div>
+        <div class="slideDown">
+            <div id="slideD"></div>
+            <h3>".slideDown"</h3>
+            <p>Click on the button</p>
+
+            <button id="btn5" type="button" name="button">Click here!</button>
+        </div>
+        <div class="slideUp">
+            <h3>".slideUp"</h3>
+            <p>Click on the button below to see something!</p>
+            <button id="btn6" type="button" name="button">Click here!</button>
+        </div>
+        <div class="slideToggle">
+            <h3>".slideToggle"</h3>
+            <p>Click on the button below to see something!</p>
+            <button id="btn7" type="button" name="button">Click here!</button>
+        </div>
+        <div class="fadeIn">
+            <h3>".fadeIn"</h3>
+            <p>Click on the button below to see something!</p>
+            <button id="btn8" type="button" name="button">Click here!</button>
+        </div>
+        <div class="fadeOut">
+            <h3>".fadeOut"</h3>
+            <p>Click on the button below to see something!</p>
+            <button id="btn9" type="button" name="button">Click here!</button>
+        </div>
+        <div class="addClass">
+            <h3>".addClass"</h3>
+            <p>Click on the button below to see the color of the text change</p>
+            <button id="btn10" type="button" name="button">Click here!</button>
+        </div>
+        <div class="before">
+            <h3>".before"</h3>
+            <p>Click on the button to see soemthing!</p>
+            <button id="btn11" type="button" name="button">Click here!</button>
+        </div>
+        <div class="after">
+            <h3>".after"</h3>
+            <p>Click on the button below to see something!</p>
+            <button id="btn12" type="button" name="button">Click here!</button>
+        </div>
+        <div class="append">
+            <h3>".append"</h3>
+            <p>If you click on the button below...</p>
+            <button id="btn13" type="button" name="button">Click here!</button>
+        </div>
+        <div class="html">
+            <h3>".html"</h3>
+            <p>So this is text for the HTML jQuery</p>
+            <button id="btn14" type="button" name="button">Click here!</button>
+        </div>
+        <div class="attr">
+            <h3>".attr"</h3>
+            <p>Click on the button below to see something!</p>
+            <button id="btn15" type="button" name="button">Click here!</button>
+        </div>
+        <div class="val">
+            <h3>".val"</h3>
+            <p>Click on the button below to see something!</p>
+            <button id="btn16" type="button" name="button">Click here!</button>
+        </div>
+        <div class="text">
+            <h3>".text"</h3>
+            <p>Click on the button below to see something!</p>
+            <button id="btn17" type="button" name="button">Click here!</button>
+        </div>
+        <div class="data">
+            <h3>".data"</h3>
+            <p>Click on the button below to see something!</p>
+            <button id="btn18" type="button" name="button">Click here!</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
