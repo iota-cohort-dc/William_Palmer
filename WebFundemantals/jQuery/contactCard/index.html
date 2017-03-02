@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Card</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+          $(document).on('click', '.cont', function(){
+            $(this).children().toggle('slow');
+            /*the above lines of code will toggle the visibility status of elements. If somethign is hidden(SEE THE HTML OF THE APPEND INPUT. THERE IS "HIDDEN" AFTER THE <p> for the description of the contact card.)*/
+          });
+            $('button').click(function(){
+              var frstNm = $('#fName').val();
+              var lstNm = $('#lName').val();
+              var dscr = $('#descr').val();
+
+              $('#fName').val('');
+              $('#lName').val('');
+              $('#descr').val('');
+
+              $('.right').append(`<div class="cont"><h3 class="first">${frstNm}</h3><h3>${lstNm}</h3><h6>Click for description</h6><p hidden>${dscr}</p></div>`);
+              /*the tag HIDDEN, sets the visibility of the html element to hidden. If you have multiple HTML elements in a DIV, when you toggle, the visible ones will become hidden and the invisible ones will be show. */
+              return false;
+            });
+          // });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left">
+          <div class="names">
+            <form id="contact" action='process.php' method="post">
+                First Name: <input id="fName" type="text" required>
+                Last Name: <input id="lName" type="text" required>
+          </div>
+          <div id="description">
+            <h2>Description:</h2>
+            <textarea id="descr" rows="5" cols="30" required></textarea>
+            <button id="add" type="button" name="button">Add User</button>
+          </div>
+        </div>
+        <div class="right">
+        </div>
+    </div>
+</body>
+
+</html>

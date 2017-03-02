@@ -1,0 +1,91 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  /*outline: 1px solid red;*/
+}
+.wrapper{
+  width: 550px;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #eeeeee;
+  vertical-align: top;
+  font-size: 14px; font-family: sans-serif;
+}
+.left {
+  display: inline-block;
+  background-color: #eeeeee;
+  /*padding: 20px;*/
+  width: 250px;
+}
+.names {
+  display: inline-block;
+}
+.contact {
+  display: block;
+  width: 50px;
+}
+.descr {
+  margin-top: 5px;
+}
+.right {
+  background-color: #eeeeee;
+  /*padding: 20px;*/
+  width: 275px;
+  align-content: center;
+  display: inline-block;
+  overflow-y: scroll;
+  height: 200px;
+  vertical-align: TOP;
+}
+#cont1{
+  background-color: #eeeeee;
+  padding: 10px;
+  margin-left: 50px;
+}
+.cont{
+  /*background-color: #eeeeee;*/
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top:10px;
+  width: 200px;
+  border-radius: 5px;
+  /*vertical-align: top;*/
+  /*height: 50px;*/
+}
+.cont3{
+  background-color: #eeeeee;
+  padding: 10px;
+  margin-left: 50px;
+}
+button {
+  margin-top: 10px;
+  width:70px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #aaaaaa;
+}
+#lName {
+  margin-top: 5px;
+}
+h2 {
+  font-size: 16px;
+  margin-top: 15px;
+}
+h3 {
+  font-size: 20px;
+  /*padding: 5px;*/
+  margin-top: 5px;
+  text-align: center;
+  /*margin÷-top: 15px;*/
+}
+h6 {
+  text-align: center;
+}
+textarea{
+  resize: none;
+}
+p{
+  text-align: center;
+}
