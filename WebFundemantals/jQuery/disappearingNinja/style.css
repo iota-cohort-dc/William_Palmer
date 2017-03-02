@@ -31,9 +31,19 @@ img {
 }
 h2 {
   color: white;
+  margin-bottom: 15px;
 }
 button {
   color: red;
-  height: 20px;
-  width: 80px;
+  height: 40px;
+  width: 130px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  background-color: #666666;
+  color: white;
+  font-size: 16px;
+}
+.footer button{
+  cursor:pointer;
+  /*background-color: #666666;*/
 }

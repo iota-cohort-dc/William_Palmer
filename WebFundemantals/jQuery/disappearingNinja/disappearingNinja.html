@@ -2,19 +2,28 @@
 <html>
 
 <head>
-      <title>disappearing Ninja</title>
+    <title>disappearing Ninja</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             // alert("rats");
-          $("img").click(function(){
-            $(this).hide("slow");
-          })
+          var newNinja = '<img src="images/ninja.jpg" alt="ninja">'
+          $("#btnStart").click(function(){
+            for(i=0;i<4;i++){
+              $('.main').append(newNinja)
+            }/* this jQuery function dynamically creates new ninjas based on the img tag in the div lower in the HTML. the for loop between the $ lines creates four ninjas at a time. The variable newNinja makes the item after .append more readible.*/
+          });
+          $(document).on('click', 'img', function(){
+            $(this).fadeOut();/*this jQuery applies functionality to all dynamically created elements, like in the "#btnStart function that creates a new row of ninjas". this will also apply affect the fadeOut listed in the comented out function below. */
+          });
+          // $("img").click(function(){
+          //   $(this).fadeOut("slow");
+          // }); /*this becomes redundant once the $(document).on above is applied.*/
           $("button").click(function(){
-            $("img").show("slow");
-          })
+            $("img").fadeIn("slow");
+          });
         });
     </script>
 </head>
@@ -23,6 +32,7 @@
     <div class="wrapper">
         <div class="header">
           <h2>The Disappearing Ninja!!!</h2>
+          <button id="btnStart" type="button" name="button">Start Ninjas</button>
         </div>
         <div class="main">
           <img src="images/ninja.jpg" alt="ninja">
@@ -35,7 +45,7 @@
           <img src="images/ninja.jpg" alt="ninja">
         </div>
         <div class="footer">
-            <button type="button" name="button">Restore</button>
+            <button type="button" name="button">Restore Ninjas</button>
         </div>
     </div>
 </body>
