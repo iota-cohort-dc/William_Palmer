@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pokemon</title>
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+        // function getPokemon() {
+            for (var i = 1; i < 152; i++) {
+              $('.holder').append('<img src=http://pokeapi.co/media/img/'+i+'.png>');
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="holder">
+
+      </div>
+    </div>
+
+</body>
+
+</html>

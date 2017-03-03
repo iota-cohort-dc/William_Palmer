@@ -1,0 +1,76 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  /*outline: 1px solid red;*/
+}
+.wrapper {
+  margin: 0px auto;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #333333;
+  background: #6191B8;
+  width: 900px;
+  font-family: sans-serif;
+  /*vertical-align: top;*/
+}
+.pokies{
+  width: 600px;
+  vertical-align: top;
+  display: inline-block;
+}
+.holder {
+  width:200px;
+  vertical-align: top;
+  display: inline-block;
+  padding: 20px;
+  margin-top: 30PX;
+  margin-left: 40px;
+  background-color: #2C4177;
+  border: 2px solid #333333;
+  position: fixed;
+}
+h2 {
+  font-family: sans-serif;
+  font-size: 28px;
+  color: #2C4177;
+}
+.holder h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 36px;
+  color: #6191B8;
+}
+.pName{
+  margin-top: 20px;
+  font-family: sans-serif; font-size: 35px;
+  text-align: center;
+  background-color: white;
+}
+.pPic{
+  margin-top: 20px;
+  text-align: center;
+  background-color: white;
+  padding: 20px 0px;
+
+}
+ul {
+  list-style-type: none;
+}
+.pType{
+  margin-top: 20px;
+  text-align: center;
+  background-color: white;
+
+}
+.pHeight{
+  margin-top: 20px;
+  text-align: center;
+  background-color: white;
+
+}
+.pWeight{
+  margin-top: 20px;
+  text-align: center;
+  background-color: white;
+
+}

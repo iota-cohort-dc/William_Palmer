@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pokemon</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+        // function getPokemon() {
+            for (var i = 1; i < 152; i++) {
+              $('.pokies').append('<img id='+ i +' src="http://pokeapi.co/media/img/'+i+'.png">');
+            }
+            $(this).on('click', 'img', function(){
+              var id =$(this).attr('id');
+                $.get("http://pokeapi.co/api/v1/pokemon/"+id+"/", function(res) {
+                $('.pName').html(res.name);
+                  var html_str = "";
+                  html_str +='<h4>Types</h4>';
+                  html_str +='<ul>';
+                  for (var i = 0; i<res.types.length; i ++){
+                    html_str += '<li>' + res.types[i].name + '</li>';
+                  }
+                  html_str += '</ul';
+                  $('.pType').html(html_str);
+                  $('.pHeight').html('<h4>Height: </h4>' + res.height);
+                  $('.pWeight').html('<h4>Weight: </h4>' + res.weight);
+                  $('.pPic').html('<img src="http://pokeapi.co/media/img/'+id+'.png">');
+                }, 'json');
+              })
+            });
+
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="pokies">
+        <h2>What's that Pokemomn</h2>
+
+      </div>
+      <div class="holder">
+        <h1>Pokemon</h1>
+
+        <div class="pName">
+
+        </div>
+        <div class="pPic">
+
+        </div>
+        <div class="pType">
+
+        </div>
+        <div class="pHeight">
+
+        </div>
+        <div class="pWeight">
+
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
