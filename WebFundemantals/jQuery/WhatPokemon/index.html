@@ -12,6 +12,7 @@
         // function getPokemon() {
             for (var i = 1; i < 152; i++) {
               $('.pokies').append('<img id='+ i +' src="http://pokeapi.co/media/img/'+i+'.png">');
+              /*the above code uses a variable, "i"to get the id of each image that is in the API and then places each image, based on the image, on the page. This will get every image in the API and display them on the page.*/
             }
             $(this).on('click', 'img', function(){
               var id =$(this).attr('id');

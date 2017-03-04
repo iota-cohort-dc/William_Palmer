@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('form').submit(function(){
+        var city = $('#cityName').val();
+        console.log(city);
+        $.get("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=c24c75381c4b4dae97f65d91036e76d6", function(res){
+          console.log(res);
+          // $('.right h1, .right h3').toggle();
+          $('.right .rtnCity').html('<h2>The temperature in</h2><p>'+res.name+'</p>');
+          $('.right .rtnTemp').html('<h3> is currently</h3><p>'+res.main.temp+'</p>');
+        }, 'json');
+
+        return false;
+      });
+    });
+    </script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left">
+        <form>
+        City Name:<input id="cityName" type="text" name="" value="">
+        <input type="submit" name="cityBtn" value="Search Weather">
+        </form>
+      </div>
+      <div class="right">
+        <div class=rtnCity>
+          <h2>The temperature in</h1>
+        </div>
+        <div class="rtnTemp">
+          <h3>is currently</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

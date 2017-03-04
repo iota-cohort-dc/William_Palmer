@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(document).on('click', 'img', function() {
+                    /*the API for Game of Thrones will return only about 10 items per query and only 1-10 if you just use the url below that ends with /house/. The for loop below basically goes through all 444 houses that are in Game of Thrones. The $.get needs to be inside the for loop so that you can see all of the houses in the API. Once you have the ids for the houses needed for the exercise, Stark(362), Baratheon(16), Lannister(229) and Targaryeon(378), you can commnet out the for loop and proceed to the rest of the jQuery information.*/
+                    // for (var i = 1; i < 445; i++){
+                    var id = $(this).attr('id');
+                    console.log(id);
+                    $.get("http://www.anapioficeandfire.com/api/houses/" + id + "/", function(res) {
+                            console.log(res);
+                            $('.name').html('<h4>Name: </h4>' + res.name);
+                            $('.words').html('<h4> Words: </h4>' + res.words);
+
+                            var titles = "";
+                            titles += '<h4>Titles: <h4/>';
+                            titles += "<ul>";
+                            for (var i = 0; i < res.titles.length; i++){
+                            titles += "<li>" + res.titles[i] + "</li>";
+                        }
+                        titles += "</ul>";
+                        $('.titles').html(titles);
+                    }, 'json');
+                  })
+
+          });
+
+        //
+        // }, 'json');
+
+        // console.log();
+        //
+        // return false;
+        // });
+        // });
+        // $('button').click(function(){
+        //   var house = $
+        //   var words =
+        //   var name =
+        //   var titles =
+        // });
+        // });
+    </script>
+    <title></title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <div class="Stark">
+                <!-- <button id="btnStark" type="name" name="button"></button> -->
+                <img id="362" src="gameofthrones/stark.jpg" alt="baratheon">
+            </div>
+            <div class="Targ">
+                <!-- <button id="btnTarg" type="name" name="button"></button> -->
+                <img id="378" src="gameofthrones/targaryen.jpg" alt="baratheon">
+            </div>
+            <div class="Lann">
+                <!-- <button id="btnLann" type="name" name="button"></button> -->
+                <img id="229" src="gameofthrones/lannister.jpg" alt="baratheon">
+            </div>
+            <div class="Bara">
+                <!-- <button id="btnBara" type="name" name="button"></button> -->
+                <img id="16" src="gameofthrones/baratheon.png" alt="baratheon">
+            </div>
+        </div>
+        <div class="details">
+            <!-- <h4>House Name</h4> -->
+            <p class="name"></p>
+            <!-- <h4>Words</h4> -->
+            <p class="words"></p>
+            <!-- <h4>Titles</h4> -->
+            <p class="titles"></p>
+            <!-- <h4>Words</h4> -->
+        </div>
+    </div>
+
+</body>
+
+</html>

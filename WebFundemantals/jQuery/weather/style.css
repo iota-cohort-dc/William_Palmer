@@ -1,0 +1,48 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  /*#DFE271 color ofr wrapper div*/
+  outline: 1px solid red;
+  font-family: sans-serif;
+}
+.wrapper {
+  margin:0px auto;
+  background-color: #DFE271;
+  width: 800px;
+
+}
+.left{
+  padding: 30px;
+  /*margin:15px;*/
+  background: #DFE271;
+  display: inline-block;
+  /*width:50px;*/
+  vertical-align: top;
+}
+.right{
+  padding: 30px;
+  /*margin:15px;*/
+  background: #DFE271;
+  display: inline-block;
+  vertical-align: top;
+}
+.rtnCity {
+    font-size: 18px;
+    text-align: center;
+}
+.rtnTemp h2{
+  font-size: 16px;
+  text-align: center;
+}
+.rtnTemp h3{
+  font-size: 18px;
+  text-align: center;
+}
+.rtnCity p{
+  font-style: center;
+  text-align: 24px;
+}
+.rtnTemp p{
+  font-size: 48px;
+  text-align: center;
+}
