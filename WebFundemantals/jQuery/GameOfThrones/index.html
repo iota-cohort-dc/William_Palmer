@@ -10,7 +10,7 @@
             $(document).on('click', 'img', function() {
                     /*the API for Game of Thrones will return only about 10 items per query and only 1-10 if you just use the url below that ends with /house/. The for loop below basically goes through all 444 houses that are in Game of Thrones. The $.get needs to be inside the for loop so that you can see all of the houses in the API. Once you have the ids for the houses needed for the exercise, Stark(362), Baratheon(16), Lannister(229) and Targaryeon(378), you can commnet out the for loop and proceed to the rest of the jQuery information.*/
                     // for (var i = 1; i < 445; i++){
-                    var id = $(this).attr('id');
+                    // var id = $(this).attr('id');
                     console.log(id);
                     $.get("http://www.anapioficeandfire.com/api/houses/" + id + "/", function(res) {
                             console.log(res);
