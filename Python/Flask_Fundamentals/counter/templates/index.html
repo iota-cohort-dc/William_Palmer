@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Counter</title>
+    <link rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>It's a counter</h1>
+      <h3>The current count is:{{session["counter"]}}</h3>
+      <form action="/count" method="post">
+        <input type="submit" value="Go Ninja!">
+      </form>
+      <form action="/reset" method="post">
+        <input type="submit" value="Hacker Reset">
+
+      </form>
+      
+    </div>
+
+  </body>
+</html>

@@ -6,7 +6,7 @@ students = [
 ]
 
 def names(students):
-    for value in students:
+    for value in students: # the word "value" is a variable. It is not a reserved word in Python
         print value['first_name'],value['last_name']
 
 names(students)
@@ -28,7 +28,7 @@ users = {
 
 def bothPeople(users):
 
-    for key, data in users.items():
+    for key, data in users.items():# the words "key" and "data" are variables. Not reserved words in Python
         count = 0
         print key
         for value in data:

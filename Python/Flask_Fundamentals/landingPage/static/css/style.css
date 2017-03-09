@@ -1,0 +1,14 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+p {
+  color: blue;
+}
+h2 {
+  color: red;
+}
+h3{
+  color: green;
+}

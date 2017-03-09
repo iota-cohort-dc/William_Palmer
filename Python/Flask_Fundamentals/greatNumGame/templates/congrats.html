@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Great Number Game</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename ='css/style2.css')}}">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="body">
+        <h1>!!!Congratulations!!!</h1>
+        <h2>You guessed the number.</h2>
+        <h3>Good for you.</h3>
+        <h3>Woop-di-do.</h3>
+        <form action="/reset" method="POST">
+          <input type="submit" name="again" value="Play Again?!">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
