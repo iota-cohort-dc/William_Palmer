@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>User Page</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+  <h1>{{ username }}</h1>
+  <!-- <h1>Enter a Valid Name!</h1> -->
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        <p>{{message}}</p>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+    <div class="wrapper">
+        <div class="userInfo">
+            <form classs="email" action="reg_user" method="Post"><br>
+                Your Email: <input type="email" name="email"><br>
+                First Name: <input type="text" name="frstNm" value=""><br>
+                Last Name: <input type="text" name="lstNm" value=""><br>
+                Password: <input type="password" name="passW" value=""><br>
+                Confirm Password: <input type="password" name="passC" value="" ><br>
+                <input type="submit" name="" value="Register!" >
+              </form>
+        </div>
+    </div>
+</body>
+
+</html>

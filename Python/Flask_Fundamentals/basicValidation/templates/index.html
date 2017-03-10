@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Basic Validation Example</title>
+</head>
+<body>
+  <h1>Enter a Valid(Any) Name!</h1>
+  {% with messages = get_flashed_messages() %} <!-- "with message" here helps declare a variable in the template that can be used within a specific scope-->
+    {% if messages %}<!-- "if message" checks if there are any messages that came back from the get_flashed_messages() function-->
+      {% for message in messages %} <!-- "with message" loops through all messages-->
+        <p>{{message}}</p>
+        <!--prints the messages one by one each in a paragraph tag -->
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+  <!--all of the above is putting a place for the flash message to be displayed.  -->
+  <form action='/process' method='POST'>
+    Name:<input type="text" name="name">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

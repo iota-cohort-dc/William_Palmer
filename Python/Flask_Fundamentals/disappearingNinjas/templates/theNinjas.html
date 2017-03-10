@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Disappearing Ninjas</title>
+  </head>
+  <body>
+    {% if allNinjas == True%}
+      <img src="{{url_for('static',filename="images/tmnt.png")}}">
+    {% endif %}
+    {% if allNinjas == False %}
+      {% if color == 'purple'%}
+        <img src="{{url_for('static',filename="images/donatello.jpg")}}" alt="Donatello">
+      {% elif color == 'blue'%}
+        <img src="{{url_for('static',filename="images/leonardo.jpg")}}" alt="Leonardo">
+
+      {% elif color == 'orange' %}
+        <img src="{{url_for('static',filename="images/michelangelo.jpg")}}" alt="Michelangelo">
+
+      {% elif color == "red" %}
+        <img src="{{url_for('static', filename="images/raphael.jpg")}}" alt="Raphael">
+
+      {% else %}
+        <img src="{{url_for('static',filename="images/notapril.jpg")}}" alt="April">
+      {% endif %}
+
+    {% endif %}
+  </body>
+</html>
