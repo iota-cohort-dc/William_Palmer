@@ -1,0 +1,40 @@
+*{
+  margin: 0px
+  padding: 0px;
+}
+.wrapper{
+  margin: 0px auto;
+  background-color:#bbbbbb;
+  font-family: sans-serif;
+  font-size: 12px;
+  width: 450px;
+  padding: 20px;
+}
+
+.messcomm {
+  background-color: #eeeeee;
+  font-size: 12px;
+  /*color: blue;*/
+  align-items: center;
+  width: 400px;
+  padding: 20px;
+}
+.warning {
+  color: red;
+  width: 400px;
+}
+.logout {
+  background-color: #aaaaaa;
+  border: 1px solid #999999;
+  width: 420px;
+  padding: 10px;
+}
+.logreg {
+  background-color: #aaaaaa;
+  border: 1px solid #333333;
+  padding: 10px;
+}
+.addComm {
+  width: 350px
+  color: red;
+}

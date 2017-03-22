@@ -1,0 +1,14 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper{
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #eeeeee;
+  font-family: sans-serif;
+}
+p {
+  /*margin-top: -5px;
+  margin-bottom: -5px;*/
+}

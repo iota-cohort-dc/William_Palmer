@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ninja Gold</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'ninjaGoldApp/css/style.css' %}">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="yourGold">
+        <h2>Gold On Hand: {{ request.session.gold }}</h2>
+      </div>
+      <div class="places">
+        <div class="location">
+          <h1>The Farm</h1>
+          <h3>(earns 10-20 gold coins)</h3>
+          <form action="/gettingGold" method="post">
+            <input type="hidden" name="fromPlace" value="farmGold">
+            <input type="submit" value="Get Your Gold!">
+          </form>
+        </div>
+        <div class="location">
+          <h1>The Cave</h1>
+          <h3>(earns 5-10 gold coins)</h3>
+          <form action="/gettingGold" method="post">
+            <input type="hidden" name="fromPlace" value="caveGold">
+            <input type="submit" value="Get Your Gold!">
+          </form>
+
+        </div>
+        <div class="location">
+          <h1>The House</h1>
+          <h3>(earns 2-5 gold coins)</h3>
+          <form action="/gettingGold" method="post">
+            <input type="hidden" name="fromPlace" value="houseGold">
+            <input type="submit" value="Get Your Gold!">
+          </form>
+
+        </div>
+        <div class="location">
+          <h1>The Casino</h1>
+          <h3>(earns/loses 0-50 gold coins)</h3>
+          <form action="/gettingGold" method="post">
+            <input type="hidden" name="fromPlace" value="casinoGold">
+            <input type="submit" value="Gamble Your Gold!">
+          </form>
+
+        </div>
+
+      </div>
+      <div class="log">
+        <h3>Activity Log</h3>
+        <div class="Activities">
+          {% for item in request.session.turn %}
+          <p>{{ item }}</p>
+          {% endfor %}
+
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

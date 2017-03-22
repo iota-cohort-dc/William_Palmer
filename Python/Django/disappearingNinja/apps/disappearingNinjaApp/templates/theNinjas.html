@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Disappearing Ninjas</title>
+  </head>
+  <body>
+    {% if allNinjas == True %}
+    {% load staticfiles %}
+      <img src="{% static 'disappearingNinjaApp/images/tmnt.png' %}">
+    {% endif %}
+
+    {% if allNinjas == False %}
+      {% if color == 'blue' %}
+      <img src="{% static 'disappearingNinjaApp/images/leonardo.jpg' %}">
+      {% elif color == 'orange' %}
+      <img src="{% static 'disappearingNinjaApp/images/michelangelo.jpg' %}">
+      {% elif color == 'purple' %}
+      <img src="{% static 'disappearingNinjaApp/images/donatello.jpg' %}">
+      {% elif color == 'red' %}
+      <img src="{% static 'disappearingNinjaApp/images/raphael.jpg' %}">
+      {% elif color != 'color' %}
+      <img src="{% static 'disappearingNinjaApp/images/notapril.jpg' %}">
+      {% endif %}
+    {% endif %}
+
+  </body>
+</html>
