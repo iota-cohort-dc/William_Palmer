@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email Validation</title>
+</head>
+<body style="font-family: sans-serif;">
+	<h1>Submit Your Email</h1>
+	<div style="margin-left: 100px; margin-top: 100px; width: 300px" class="main">
+		<h2 style="background-color: red; color: yellow; text-align: center;">{{false}}</h2>
+		<form action='/submit' method='post'>
+		{% csrf_token %}
+			Email: <input style="margin-top: 10px" type="text" name="email"><br>
+			<input style="margin-top: 10px" class="one" type="submit" name="submit">
+		</form>
+	</div>
+</body>
+</html>
